@@ -4,17 +4,20 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eagle-Contacto</title>
+	<!-- links externos -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="../css//style.css">
-	<title>Document</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<!-- links estilo -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 	<header>
-		<div class="nav-bar">
+		<div class="nav-bar" data-aos="fade-down">
 			<div class="logo">
 				<a href="../index.html">
 					<img src="../assets/img/logo_eagle_claro.png" alt="eagle">
@@ -22,25 +25,28 @@
 			</div>
 			<div class="menu">
 				<ul>
-					<a href="./productos.html">
-						<li>Productos</li>
-					</a>
-					<a href="./experiencias.html">
-						<li>Experiencias</li>
-					</a>
-					<a href="./quienes_somos.html">
-						<li>Quienes somos</li>
-					</a>
-					<a href="./contacto.html">
-						<li>Contacto</li>
-					</a>
+					<li>
+						<a href="../index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="./productos.html">Productos</a>
+					</li>
+					<li>
+						<a href="./experiencias.html">Experiencias</a>
+					</li>
+					<li>
+						<a href="./quienes_somos.html">Quienes somos</a>
+					</li>
+					<li>
+						<a href="./contacto.html">Contacto</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</header>
 	<main>
 		<div class="grid-container">
-			<div class="content">
+			<div class="content" data-aos="zoom-in">
 				<h1 class="title">Contacto</h1>
 				<div class="cont-card">
 					<p>
@@ -117,5 +123,10 @@
 			<a href="https://www.instagram.com/eaglesimulation/" target="_blank" id="ig"></a>
 		</div>
 	</footer>
+	<!-- AOS SCRIPT -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
