@@ -11,120 +11,146 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-	<!-- Bootstrap CDN-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<!-- links estilo -->
-	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<header>
-		<div class="nav-bar" data-aos="fade-down">
-			<div class="logo">
-				<a href="../index.html">
-					<img src="../assets/img/logo_eagle_claro.png" alt="eagle">
-				</a>
+	<!-- NAVBAR -->
+	<div class="container-fluid" data-aos="fade-down">
+		<header class="row ">
+			<div class="col-12 col-md-12 col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
+					<a class="navbar-brand" href="../index.html">
+						<img src="../assets/img/logo_eagle_claro.png" class="logo" alt="eagle">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span><a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./productos.html">Productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./experiencias.html">Experiencias</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./quienes_somos.html">Quienes somos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
-			<div class="menu">
-				<ul>
-					<li>
-						<a href="../index.html">Inicio</a>
-					</li>
-					<li>
-						<a href="./productos.html">Productos</a>
-					</li>
-					<li>
-						<a href="./experiencias.html">Experiencias</a>
-					</li>
-					<li>
-						<a href="./quienes_somos.html">Quienes somos</a>
-					</li>
-					<li>
-						<a href="./contacto.html">Contacto</a>
-					</li>
-				</ul>
+		</header>
+	</div>
+	<!-- NAVBAR CLOSE -->
+	<!-- CONTENT -->
+	<main class="container-fluid" data-aos="zoom-in">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<h1 class="title">Contacto</h1>
 			</div>
 		</div>
-	</header>
-	<main>
-		<div class="grid-container">
-			<div class="content" data-aos="zoom-in">
-				<h1 class="title">Contacto</h1>
-				<div class="cont-card">
-					<p>
-						En EAGLE Simultion & Training nos importa saber de ti, de tus proyectos y de tus ganas de aprender a volar, asi que sientete en la libertad de comunicarte con nosotros!
-					</p>
-					<div class="cont-form">
-						<p>Llena el siguiente formulario y nos pondremos en contacto contigo!</p>
-						<div class="cont-form-content">
-							<form action="#">
-								<label for="nombre">NOMBRE:
-									<input type="text" name="nombre" placeholder="NOMBRE">
-									<input type="text" name="nombre" placeholder="APELLIDO">
-								</label>
-								<br>
-								<label for="mail">MAIL:
-									<input type="text" name="mail" placeholder="@">
-								</label>
-								<br>
-								<label for="telefono">TELEFONO:
-									<input type="text" name="telefono" placeholder="+57...">
-								</label>
-								<br>
-								<div>
-									Quiero:
-									<select name="interes" id="interes" class="form-square">
-										<option value="hablar">Hablar con alguien :D</option>
-										<option value="productos">Saber mas de sus productos</option>
-										<option value="experiencia">Conocer sobre la experiencia EAGLE Simulation & Training</option>
-										<option value="experiencia">Otra cosa :S</option>
-									</select>
-								</div>
-								<div>
-									COMENTARIOS:
-									<br>
-									<textarea name="" id="" cols="30" rows="10" placeholder="HABLANOS :3">
-									</textarea>
-								</div>
-								<br>
-								<div>
-									Deseas que nos pongamos en contacto contigo?
-								</div>
-								<div>
-									Telefono
-									<input type="radio" name="contactar" value="telefono">
-								</div>
-								<div>
-									Correo
-									<input type="radio" name="contactar" value="correo">
-								</div>
-								<div>
-									Los dos
-									<input type="radio" name="contactar" value="telycorreo">
-								</div>
-								<div>
-									<h6>Acepto termino y condiciones sobre suministro de datos personales</h6>
-									<input type="checkbox" name="aceptar" value="1">
-								</div>
-								<input type="submit" value="ENVIAR">
-								<input type="reset" value="LIMPIAR">
-								<input type="button" value="NO QUIERO >:(">
-							</form>
-							<img src="../assets/img/logo_eagle.png" alt="logo_eagle">
+		<div class="row">
+			<div class="cont-text col-12 col-md-12 col-lg12">
+				<p>
+					En EAGLE Simultion & Training nos importa saber de ti, de tus proyectos y de tus ganas de aprender a volar, asi que sientete en la libertad de comunicarte con nosotros!
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="cont-text col-12 col-md-12 col-lg12">
+				<p>
+					Llena el siguiente formulario y nos pondremos en contacto contigo!
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg12">
+				<div class="cont-form-content">
+					<form action="#">
+						<label for="nombre">NOMBRE:
+							<input type="text" name="nombre" placeholder="NOMBRE">
+							<input type="text" name="nombre" placeholder="APELLIDO">
+						</label>
+						<br>
+						<label for="mail">MAIL:
+							<input type="text" name="mail" placeholder="@">
+						</label>
+						<br>
+						<label for="telefono">TELEFONO:
+							<input type="text" name="telefono" placeholder="+57...">
+						</label>
+						<br>
+						<div>
+							Quiero:
+							<select name="interes" id="interes" class="form-square">
+								<option value="hablar">Hablar con alguien :D</option>
+								<option value="productos">Saber mas de sus productos</option>
+								<option value="experiencia">Conocer sobre la experiencia EAGLE Simulation & Training</option>
+								<option value="experiencia">Otra cosa :S</option>
+							</select>
 						</div>
-					</div>
+						<div>
+							COMENTARIOS:
+							<br>
+							<textarea name="" id="" cols="30" rows="10" placeholder="HABLANOS :3">
+							</textarea>
+						</div>
+						<br>
+						<div>
+							Deseas que nos pongamos en contacto contigo?
+						</div>
+						<div>
+							Telefono
+							<input type="radio" name="contactar" value="telefono">
+						</div>
+						<div>
+							Correo
+							<input type="radio" name="contactar" value="correo">
+						</div>
+						<div>
+							Los dos
+							<input type="radio" name="contactar" value="telycorreo">
+						</div>
+						<div>
+							<h6>Acepto termino y condiciones sobre suministro de datos personales</h6>
+							<input type="checkbox" name="aceptar" value="1">
+						</div>
+						<input type="submit" value="ENVIAR">
+						<input type="reset" value="LIMPIAR">
+						<input type="button" value="NO QUIERO >:(">
+					</form>
+					<img src="../assets/img/logo_eagle.png" alt="logo_eagle">
 				</div>
 			</div>
 		</div>
 	</main>
-	<footer>
-		<h3>PUT YOUR DREAMS OVER OUR WINGS AND WE MAKE THEM FLY</h3>
-		<div class="social-networks">
-			<a href="https://wa.me/+573107882098" target="_blank" id="wa"></a>
-			<a href="https://www.facebook.com/AlexanderContreasS" target="_blank" id="fb"></a>
-			<a href="https://www.instagram.com/eaglesimulation/" target="_blank" id="ig"></a>
+	<!-- CONTENT CLOSE -->
+	<!-- FOOTER -->
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="footer-text col-12 col-md-12 col-lg-8">
+				<h3>PUT YOUR DREAMS OVER OUR WINGS AND WE MAKE THEM FLY</h3>
+			</div>
+			<div class="col-12 col-md-12 col-lg-4">
+				<div class="social-networks">
+					<a href="https://wa.me/+573107882098" target="_blank" id="wa"></a>
+					<a href="https://www.facebook.com/AlexanderContreasS" target="_blank" id="fb"></a>
+					<a href="https://www.instagram.com/eaglesimulation/" target="_blank" id="ig"></a>
+				</div>
+			</div>
 		</div>
 	</footer>
+	<!-- FOOTER CLOSE -->
 	<!-- AOS SCRIPT -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
@@ -132,6 +158,6 @@
 	</script>
 	<!-- Bootstrap SCRIPT -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
