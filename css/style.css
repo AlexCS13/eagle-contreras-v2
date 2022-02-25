@@ -10,23 +10,9 @@ body{
 	background-size: 15px;
 	background-attachment: fixed;
 }
-/* a{
-	color: #EFFFFB;
-	text-decoration: none;
-} */
-
-/* a:hover {
-	color: cadetblue;
-} */
-
-/* a:active {
-	color: rgb(92, 57, 57);
-} */
-
 li{
 	list-style: none;
 }
-
 
 /* -------------------------------- NAVBAR -------------------------------- */
 
@@ -138,24 +124,6 @@ header div .col-12, .col-md-12, .col-lg-12{
 }
 
 /* -------------------------------- MAIN -------------------------------- */
-/* main{
-	min-height: auto;
-} */
-
-/* .grid-container {
-	display: grid;
-	grid-template-areas:
-	"marginL content marginR";
-	grid-template-columns: 8% auto 8%;
-	grid-template-rows: auto;
-} */
-/* .content{
-	grid-area: content;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-} */
-
 .title{
 	width: 88%;
 	color: #33313B;
@@ -191,14 +159,6 @@ header div .col-12, .col-md-12, .col-lg-12{
 }
 
 /* MAIN INDEX ---------------------------------------------------------------- */
-
-/* .home-content{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-} */
 .home-content{
 	width: 100%;
 	margin: 0;
@@ -219,16 +179,6 @@ header div .col-12, .col-md-12, .col-lg-12{
 .home-carousel{
 	display: flex;
 }
-/* .gallery{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 80%;
-	height: 10rem;
-	margin: 2rem 0;
-	border-radius: 1.5rem;
-	background-color: rgba(51,49,59,0.8);
-} */
 
 /* MEDIA QUERIE MOBILE */
 @media only screen and (max-width: 768px){
