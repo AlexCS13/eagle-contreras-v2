@@ -824,11 +824,6 @@ footer{
 	text-decoration: none;
 }
 
-.social-networks:hover{
-	transition: 0.5s;
-	transform: scale(1.2);
-}
-
 #wa::after{
 	content: '\f232';
 	font-family: fontAwesome;
