@@ -42,7 +42,7 @@ header div .col-12, .col-md-12, .col-lg-12{
 }
 .navbar-nav li:hover {
 	transition: 0.5s;
-	transform: scale(1.2);
+	transform: scale(1.05);
 }
 
 /* MEDIA QUERIE MOBILE */
@@ -457,7 +457,7 @@ header div .col-12, .col-md-12, .col-lg-12{
 		width: 55%;
 	}
 	.details li{
-		font-size: 2.3rem;
+		font-size: 2.1rem;
 	}
 	.details li::before{
 		display: inline-block;
