@@ -1,0 +1,166 @@
+// MAIN PRODUCTOS
+.product-product{
+	display: flex;
+	justify-content: center;
+    .product{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: $white;
+        background-color: $darkBlueCard;
+        border-radius: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 85%;
+        .product-img, .product-detail{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .product-img{
+            align-items: center;
+            h2{
+                font-size: 3rem;
+                padding: 1rem;
+            }
+            img{
+                width: 80%;
+                margin-bottom: 1rem;
+                border-radius: 0.8rem;
+            }
+        }
+        .product-detail{
+            justify-content: center;
+            align-items: center;
+            h4{
+                font-size: 2rem;
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+// MEDIA QUERIE MOBILE
+@media only screen and (max-width: 768px){
+	.product{
+		flex-direction: column;
+		width: 85%;
+        .product-img, .product-detail{
+            width: 95%;
+        }
+        .product-img{
+            h2{
+                font-size: 2rem;
+                padding: 0.5rem;
+            }
+        }
+        .product-detail{
+            .details{
+                padding-left: 2rem;
+                li{
+                    font-size: 1.2rem;
+                }
+                li::before{
+                    display: inline-block;
+                    content: "";
+                    height: 1rem;
+                    border: $white solid 1px;
+                    border-radius: 50%;
+                    margin-right: 0.5rem;
+                }
+            }
+            h4{
+                font-size: 1.5rem;
+                padding: 0.5rem;
+            }
+        }
+	}
+}
+
+// MEDIA QUERIE TABLET
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+	.product{
+		width: 88%;
+		justify-content: space-evenly;
+        .product-img, .product-detail{
+            display: flex;
+            flex-direction: column;
+        }
+        .product-img{
+            width: 40%;
+            justify-content: space-evenly;
+            h2{
+                font-size: 1.8rem;
+                padding: 0.5rem;
+                text-align: center;
+            }
+            img{
+                width: 100%;
+                margin-left: 2rem;
+            }
+        }
+        .product-detail{
+            width: 40%;
+            .details{
+                li{
+                    font-size: 1.5rem;
+                }
+                li::before{
+                    display: inline-block;
+                    content: "";
+                    height: 1rem;
+                    border: $white solid 1px;
+                    border-radius: 50%;
+                    margin-right: 0.5rem;
+                }
+            }
+            h4{
+                font-size: 1.6rem;
+                padding: 0.5rem;
+            }
+        }
+	}
+}
+
+// MEDIA QUERIE DESKTOP
+@media only screen and (min-width: 1024px){
+	.product{
+		width: 80%;
+        .product-img, .product-detail{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .product-img{
+            width: 45%;
+            justify-content: space-evenly;
+            h2{
+                font-size: 3rem;
+                padding: 0.5rem;
+                text-align: center;
+            }
+            img{
+                width: 100%;
+                margin-left: 2rem;
+            }
+        }
+        .product-detail{
+            width: 55%;
+            .details{
+                li{
+                    font-size: 2.1rem;
+                }
+                li::before{
+                    display: inline-block;
+                    content: "";
+                    height: 2rem;
+                    border: $white solid 1px;
+                    border-radius: 50%;
+                    margin-right: 0.5rem;
+                }
+            }
+            h4{
+                font-size: 2.5rem;
+                padding: 0.5rem;
+            }
+        }
+	}
+}

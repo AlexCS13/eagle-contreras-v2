@@ -1,0 +1,87 @@
+// MAIN QUIENES SOMOS
+.qs{
+	display: flex;
+	justify-content: center;
+    .qs-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $darkBlueCard;
+        margin-bottom: 1.5rem;
+        .qs-img{
+            display: flex;
+            width: 100%;
+        }
+        p{
+            text-align: justify;
+            color: $white;
+            width: 95%;
+        }
+    }
+}
+// MEDIA QUERIE MOBILE
+@media only screen and (max-width: 768px){
+	.qs-card{
+		padding: 0.5rem 0;
+		width: 90%;
+		border-radius: 1.2rem;
+        .qs-img{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            img{
+                width: 70%;
+                padding: 0.5rem;
+                border-radius: 1.5rem;
+            }
+        }
+        p{
+            font-size: 1.3rem;
+            padding: 0.4rem 0;
+        }
+	}
+}
+
+// MEDIA QUERIE TABLET
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+	.qs-card{
+		padding: 0.5rem 0;
+		width: 93%;
+		border-radius: 1.2rem;
+        .qs-img{
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: center;
+            img{
+                width: 45%;
+                padding: 0.5rem;
+                border-radius: 1.5rem;
+            }
+        }
+        p{
+            font-size: 1.6rem;
+            padding: 0.4rem 0;
+        }
+	}
+}
+
+// MEDIA QUERIE DESKTOP
+@media only screen and (min-width: 1024px){
+	.qs-card{
+		border-radius: 1.5rem;
+		width: 90%;
+        .qs-img{
+            flex-wrap: nowrap;
+            justify-content: center;
+            img{
+                height: 100%;
+                padding: 2rem;
+                border-radius: 3rem;
+            }
+        }
+        p{
+            font-size: 2.7rem;
+            padding: 2rem 2rem;
+        }
+	}
+}

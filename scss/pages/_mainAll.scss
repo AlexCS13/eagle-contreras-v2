@@ -1,0 +1,34 @@
+// MAIN ALL
+.title{
+	width: 88%;
+	color: $darkBlue;
+}
+
+// MEDIA QUERIE MOBILE
+@media only screen and (max-width: 768px){
+	.title{
+		width: 100%;
+		font-size: 3rem;
+		text-align: center;
+		margin: 0.5rem 0;
+	}
+}
+
+// MEDIA QUERIE TABLET
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+	.title{
+		font-size: 3.5rem;
+		margin: 0rem 2.5rem;
+		text-align: start;
+		padding: 0.6rem 0;
+	}
+}
+
+// MEDIA QUERIE DESKTOP
+@media only screen and (min-width: 1024px){
+	.title{
+		font-size: 8rem;
+		margin: 1rem 7rem;
+		text-align: start;
+	}
+}

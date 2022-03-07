@@ -1,0 +1,84 @@
+// MAIN EXPEREINCIAS
+.exp{
+	display: flex;
+	justify-content: center;
+    .exp-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $darkBlueCard;
+        border-radius: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 90%;
+        p{
+            text-align: center;
+            color: $white;
+        }
+        .exp-img{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            img{
+                margin: 0.6rem;
+                border-radius: 0.8rem;
+            }
+        }
+    }
+}
+
+// MEDIA QUERIE MOBILE
+@media only screen and (max-width: 768px){
+	.exp-card{
+		width: 90%;
+		padding: 0.5rem 0;
+        p{
+            font-size: 1.3rem;
+            padding: 0.2rem 0.2rem;
+        }
+        .exp-img{
+            padding: 0rem;
+            width: 100%;
+            img{
+                width: 85%;
+            }
+        }
+	}
+}
+
+// MEDIA QUERIE TABLET
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+	.exp-card{
+		width: 90%;
+		padding: 0.5rem 0;
+        p{
+            font-size: 2rem;
+            padding: 0.2rem 0.8rem;
+        }
+        .exp-img{
+            padding: 0rem;
+            width: 85%;
+            img{
+                width: 43%;
+            }
+        }
+	}
+}
+
+// MEDIA QUERIE DESKTOP
+@media only screen and (min-width: 1024px){
+	.exp-card{
+		width: 90%;
+        p{
+            font-size: 2.7rem;
+            padding: 0 2rem;
+        }
+        .exp-img{
+            padding: 1rem;
+            width: 90%;
+            img{
+                width: 30%;
+            }
+        }
+	}
+}

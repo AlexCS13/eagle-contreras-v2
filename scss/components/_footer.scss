@@ -1,0 +1,97 @@
+// FOOTER
+footer{
+	justify-content: space-around;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	padding: 0.5rem 0rem;
+	background-color: $darkBlue;
+    .footer-text{
+        h3{
+            color: $white;
+            font-style: italic;
+        }
+    }
+    .social-networks{
+        display: flex;
+        a{
+            font-size: 2.5rem;
+            color: $white;
+            padding: 0 1rem;
+            text-decoration: none;
+        }
+    }
+}
+#wa::after{
+	content: '\f232';
+	font-family: fontAwesome;
+}
+#fb::after{
+	content: '\f09a';
+	font-family: fontAwesome;
+}
+#ig::after{
+	content: '\f16d';
+	font-family: fontAwesome;
+}
+// MEDIA QUERIE MOBILE
+@media only screen and (max-width: 768px){
+	footer{
+		flex-direction: column;
+		height: auto;
+        h3{
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 0 0.8rem;
+        }
+        .social-networks{
+            justify-content: center;
+            padding-top: 0;
+            a{
+                font-size: 1.6rem;
+            }
+        }
+	}
+}
+
+// MEDIA QUERIE TABLET
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+	footer{
+		flex-direction: column;
+		height: auto;
+        h3{
+            font-size: 1.7rem;
+            text-align: center;
+            padding: 0 0.8rem;
+        }
+        .social-networks{
+            justify-content: center;
+            padding-top: 0;
+            a{
+                font-size: 2rem;
+            }
+        }
+	}
+}
+
+// MEDIA QUERIE DESKTOP
+@media only screen and (min-width: 1024px){
+	.footer-text{
+		display: flex;
+		align-items: center;
+        h3{
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 0;
+            padding-left: 7rem;
+            margin: 0;
+        }
+	}
+	.social-networks{
+		justify-content: center;
+		padding:0;
+        a{
+            font-size: 3rem;
+        }
+	}
+}
