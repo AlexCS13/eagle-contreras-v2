@@ -4,7 +4,6 @@
 	justify-content: center;
     .product{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         color: $white;
         background-color: $darkBlueCard;
@@ -14,7 +13,6 @@
         .product-img, .product-detail{
             display: flex;
             flex-direction: column;
-            width: 50%;
         }
         .product-img{
             align-items: center;

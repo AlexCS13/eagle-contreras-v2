@@ -299,7 +299,6 @@ footer {
   justify-content: center; }
   .product-product .product {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     color: #e7e7e7;
     background-color: rgba(51, 49, 59, 0.8);
@@ -308,8 +307,7 @@ footer {
     width: 85%; }
     .product-product .product .product-img, .product-product .product .product-detail {
       display: flex;
-      flex-direction: column;
-      width: 50%; }
+      flex-direction: column; }
     .product-product .product .product-img {
       align-items: center; }
       .product-product .product .product-img h2 {
