@@ -326,7 +326,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .product {
-    flex-direction: column;
+    flex-direction: column !important;
     width: 85%; }
     .product .product-img, .product .product-detail {
       width: 95%; }
