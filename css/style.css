@@ -93,7 +93,7 @@ footer {
   height: auto;
   width: 100%;
   padding: 0.5rem 0rem;
-  background-color: #33313B; }
+  background-color: rgba(51, 49, 59, 0.8); }
   footer .footer-text h3 {
     color: #e7e7e7;
     font-style: italic; }
@@ -559,9 +559,25 @@ footer {
     .cont-form-content form .form-square {
       width: 80%; }
 
+.buttonC, .buttonC--send, .buttonC--reset, .buttonC--none {
+  width: 20%;
+  font-size: 1.4rem;
+  background-color: #33313B;
+  border: 1px solid black;
+  border-radius: 10px; }
+
+.buttonC--send {
+  background-color: aquamarine; }
+
+.buttonC--reset {
+  background-color: bisque; }
+
+.buttonC--none {
+  font-size: 1rem; }
+
 @media only screen and (max-width: 768px) {
   .cont-text p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.2rem 0.5rem;
     width: 90%;
     margin-bottom: 0.5rem;

@@ -6,13 +6,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: $darkBlueCard;
+        background-color: map-get($map: $palette, $key: 'card');
         border-radius: 1.5rem;
         margin-bottom: 1.5rem;
         width: 90%;
         p{
             text-align: center;
-            color: $white;
+            color: map-get($map: $palette, $key: 'secondary');
         }
         .exp-img{
             display: flex;

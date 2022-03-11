@@ -4,8 +4,8 @@
 	justify-content: center;
     p{
         text-align: center;
-        color: $white;
-        background-color: $darkBlueCard;
+        color: map-get($map: $palette, $key: 'secondary');
+        background-color: map-get($map: $palette, $key: 'card');
     }
 }
 .cont-form-content{
@@ -15,20 +15,38 @@
     form{
         width: 50%;
         padding: 1.5rem;
-        color: $white;
-        background-color: $darkBlueCard;
+        color: map-get($map: $palette, $key: 'secondary');
+        background-color: map-get($map: $palette, $key: 'card');
         .form-square{
             width: 80%;
         }
     }
 }
-
+.buttonC{
+    width: 20%;
+    font-size: 1.4rem;
+    background-color: map-get($map: $palette, $key: 'primary');
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.buttonC--send{
+    @extend .buttonC;
+    background-color: aquamarine
+}
+.buttonC--reset{
+    @extend .buttonC;
+    background-color: bisque
+}
+.buttonC--none{
+    @extend .buttonC;
+    font-size: 1rem;
+}
 
 // MEDIA QUERIE MOBILE
 @media only screen and (max-width: 768px){
 	.cont-text{
         p{
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             padding: 0.2rem 0.5rem;
             width: 90%;
             margin-bottom: 0.5rem;

@@ -3,13 +3,7 @@
 	display: flex;
 	justify-content: center;
     .product{
-        display: flex;
-        flex-wrap: wrap;
-        color: $white;
-        background-color: $darkBlueCard;
-        border-radius: 1.5rem;
-        margin-bottom: 1.5rem;
-        width: 85%;
+        @include product(flex,wrap,map-get($map: $palette, $key: 'secondary'),map-get($map: $palette, $key: 'card'),1.5rem,1.5rem,85%);
         .product-img, .product-detail{
             display: flex;
             flex-direction: column;
@@ -60,7 +54,7 @@
                     display: inline-block;
                     content: "";
                     height: 1rem;
-                    border: $white solid 1px;
+                    border: map-get($map: $palette, $key: 'secondary') solid 1px;
                     border-radius: 50%;
                     margin-right: 0.5rem;
                 }
@@ -105,7 +99,7 @@
                     display: inline-block;
                     content: "";
                     height: 1rem;
-                    border: $white solid 1px;
+                    border: map-get($map: $palette, $key: 'secondary') solid 1px;
                     border-radius: 50%;
                     margin-right: 0.5rem;
                 }
@@ -150,7 +144,7 @@
                     display: inline-block;
                     content: "";
                     height: 2rem;
-                    border: $white solid 1px;
+                    border: map-get($map: $palette, $key: 'secondary') solid 1px;
                     border-radius: 50%;
                     margin-right: 0.5rem;
                 }

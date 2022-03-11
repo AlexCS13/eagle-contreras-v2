@@ -5,10 +5,10 @@ footer{
 	height: auto;
 	width: 100%;
 	padding: 0.5rem 0rem;
-	background-color: $darkBlue;
+	background-color: map-get($map: $palette, $key: 'card');
     .footer-text{
         h3{
-            color: $white;
+            color: map-get($map: $palette, $key: 'secondary');
             font-style: italic;
         }
     }
@@ -16,7 +16,7 @@ footer{
         display: flex;
         a{
             font-size: 2.5rem;
-            color: $white;
+            color: map-get($map: $palette, $key: 'secondary');
             padding: 0 1rem;
             text-decoration: none;
         }

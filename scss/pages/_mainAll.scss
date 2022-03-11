@@ -1,7 +1,7 @@
 // MAIN ALL
 .title{
 	width: 88%;
-	color: $darkBlue;
+	color: map-get($map: $palette, $key: 'primary');
 }
 
 // MEDIA QUERIE MOBILE

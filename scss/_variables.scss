@@ -1,4 +1,15 @@
-$white: #e7e7e7;
-$darkBlue: #33313B;
-$darkBlueCard: rgba(51,49,59,0.8);
 $font: 'Oswald', sans-serif;
+$palette: (
+    'primary': #33313B,
+    'secondary': #e7e7e7,
+    'card': rgba(51,49,59,0.8),
+);
+@mixin product ($flex,$fwrap,$color,$backColor,$borderRadius,$marginB,$width) {
+    display: $flex;
+    flex-wrap: $fwrap;
+    color: $color;
+    background-color: $backColor;
+    border-radius: $borderRadius;
+    margin-bottom: $marginB;
+    width: $width;
+}

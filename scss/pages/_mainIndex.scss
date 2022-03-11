@@ -12,7 +12,7 @@
             width: 100%;
             height: auto;
             text-align: center;
-            color: $darkBlue;
+            color: map-get($map: $palette, $key: 'primary');
         }
     }
 }

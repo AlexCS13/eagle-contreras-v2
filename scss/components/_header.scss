@@ -3,7 +3,7 @@ header div .col-12, .col-md-12, .col-lg-12{
     padding: 0;
     .navbar{
         flex-wrap: nowrap;
-        background-color: $darkBlue!important;
+        background-color: map-get($map: $palette, $key: 'primary')!important;
         .navbar-brand{
             padding-left: 1rem;
             .logo:hover {
