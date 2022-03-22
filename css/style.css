@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
 
 body {
   font-family: "Oswald", sans-serif;
@@ -47,7 +48,7 @@ header div .col-12, .col-md-12, .col-lg-12 {
       width: 100%; }
       .navbar .navbar-brand .logo {
         height: 100%;
-        padding-left: 2.2rem; } }
+        padding-left: 3rem; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   .navbar {
