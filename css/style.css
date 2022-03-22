@@ -562,18 +562,9 @@ footer {
 .buttonC, .buttonC--send, .buttonC--reset, .buttonC--none {
   width: 20%;
   font-size: 1.4rem;
-  background-color: #33313B;
+  background-color: #e7e7e7;
   border: 1px solid black;
   border-radius: 10px; }
-
-.buttonC--send {
-  background-color: aquamarine; }
-
-.buttonC--reset {
-  background-color: bisque; }
-
-.buttonC--none {
-  font-size: 1rem; }
 
 @media only screen and (max-width: 768px) {
   .cont-text p {
