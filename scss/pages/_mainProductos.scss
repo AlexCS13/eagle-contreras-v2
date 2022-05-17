@@ -23,9 +23,17 @@
         .product-detail{
             justify-content: center;
             align-items: center;
+            padding-bottom: 1rem;
             h4{
                 font-size: 2rem;
                 padding-top: 1rem;
+            }
+            .buttonBuy{
+                width: 30%;
+                font-size: 1rem;
+                background-color: map-get($map: $palette, $key: 'secondary');
+                border: 1px solid black;
+                border-radius: 10px;
             }
         }
     }
@@ -62,6 +70,9 @@
             h4{
                 font-size: 1.5rem;
                 padding: 0.5rem;
+            }
+            .buttonBuy{
+                font-size: 0.8rem;
             }
         }
 	}
@@ -108,6 +119,9 @@
                 font-size: 1.6rem;
                 padding: 0.5rem;
             }
+            .buttonBuy{
+                font-size: 1.3rem;
+            }
         }
 	}
 }
@@ -152,6 +166,9 @@
             h4{
                 font-size: 2.5rem;
                 padding: 0.5rem;
+            }
+            .buttonBuy{
+                font-size: 1.5rem;
             }
         }
 	}
