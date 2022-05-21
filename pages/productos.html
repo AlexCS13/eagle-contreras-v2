@@ -54,6 +54,8 @@
 		</header>
 	</div>
 	<!-- NAVBAR CLOSE -->
+	<!-- SHOPPING CART -->
+	<div id="shopping-cart" class="shopping-cart"></div>
 	<!-- CONTENT -->
 	<main class="container-fluid" data-aos="zoom-in">
 		<div class="row">
@@ -79,7 +81,7 @@
 							<li>Semi portatil.</li>
 						</ul>
 						<h4 id="cost1" class="cost">$8.500.000 COP</h4>
-						<button class="buttonBuy" onclick=comprar(this.value) value="8.500.000">COMPRAR</button>
+						<button class="buttonBuy" onclick=addCartItems(this.value) value="MICRO CABINA,8.500.000">COMPRAR</button>
 					</div>
 				</div>
 			</div>
@@ -98,7 +100,7 @@
 							<li>Portatil.</li>
 						</ul>
 						<h4 id="cost2" class="cost">$3.500.000 COP</h4>
-						<button class="buttonBuy" onclick=comprar(this.value) value="3.500.000">COMPRAR</button>
+						<button class="buttonBuy" onclick=addCartItems(this.value) value="FCU A320,3.500.000">COMPRAR</button>
 					</div>
 				</div>
 			</div>
@@ -120,7 +122,7 @@
 							<li>Portatil.</li>
 						</ul>
 						<h4 id="cost3" class="cost">$2.000.000 COP</h4>
-						<button class="buttonBuy" onclick=comprar(this.value) value="2.000.000">COMPRAR</button>
+						<button class="buttonBuy" onclick=addCartItems(this.value) value="PANELES INSTRUMENTOS,2.000.000">COMPRAR</button>
 					</div>
 				</div>
 			</div>
@@ -152,6 +154,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="../js/bootstrap.bundle.min.js"></script>
 	<script src="../js/main.js"></script>
+	<script src="../js/cart.js"></script>
 </body>
 </html>
 
