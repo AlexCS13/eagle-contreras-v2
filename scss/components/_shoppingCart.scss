@@ -1,31 +1,108 @@
+.cart-icon{
+    position: absolute;
+    right: 3rem;
+    top: 7rem;
+    z-index: 1000;
+    font-size: 2.5rem;
+    color: map-get($map: $palette, $key: 'primary');
+}
+.cart-icon:hover{
+    cursor: pointer;
+}
 .shopping-cart{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 25%;
     box-shadow: 1px 2px 8px 3px rgba($color: #000000, $alpha: 0.7);
     border-radius: 0.5rem;
     position: absolute;
-    top: 8rem;
-    right: 1rem;
+    top: 11.5rem;
+    right: 3rem;
     z-index: 1000000;
     background-color: #ffffff;
-    // transform: translateY(-100%);
-
-    .item-card{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: rgba($color: #000000, $alpha: 0.3) solid 1px;
-        border-radius: 0.25rem;
-        margin: 5px 10px;
-        &__name{
+    .item-card td{
+        padding: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    #delete-icon:hover:after{
+        color: red;
+        cursor: pointer;
+    }
+    #delete-icon::after{
+        content: '\f057';
+        font-family: fontAwesome;
+        color: map-get($map: $palette, $key: 'primary');
+    }
+    #empty-cart{
+        text-align: center;
+        color: rgb(80, 80, 80);
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    #empty-cart:hover{
+        color: red;
+        background-color: rgb(255, 203, 203);
+    }
+    .table-titles{
+        th{
             font-size: 20px;
-            padding: 6px;
-            font-weight: bold;
+            text-align: center;
+        }
+        .img-title{
+            width: 20%;
+            height: auto;
+        }
+        .name-title{
+            width: 15%;
+            height: auto;
+        }
+        .cost-title{
+            width: 20%;
+            height: auto;
+        }
+        .cant-title{
+            width: 10%;
+            height: auto;
+        }
+        .delete-title{
+            width: 5%;
+            height: auto;
         }
     }
     .cartImg{
-        width: 60%;
+        width: 100%;
+    }
+    &.hidden{
+        display: none;
+    }
+}
+
+// MEDIA QUERY MOBILE
+@media only screen and (max-width: 768px){
+    .cart-icon{
+        display: inline;
+        position: absolute;
+        top: 0.3rem;
+        left: 1rem;
+        right: 90vh;
+        font-size: 2rem;
+        color: map-get($map: $palette, $key: 'secondary');
+    }
+    .shopping-cart{
+        width: 90vw;
+        right: 5vw;
+        top: 4rem;
+        position: absolute;
+    }
+}
+
+// MEDIA QUERIE TABLET
+@media only screen and (min-width: 769px) and (max-width: 1300px){
+    .shopping-cart{
+        width: 45vw;
+        right: 5vw;
+        top: 11rem;
+        position: absolute;
     }
 }

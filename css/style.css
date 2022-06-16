@@ -161,31 +161,91 @@ footer {
     .social-networks a {
       font-size: 3rem; } }
 
+.cart-icon {
+  position: absolute;
+  right: 3rem;
+  top: 7rem;
+  z-index: 1000;
+  font-size: 2.5rem;
+  color: #33313B; }
+
+.cart-icon:hover {
+  cursor: pointer; }
+
 .shopping-cart {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 25%;
   box-shadow: 1px 2px 8px 3px rgba(0, 0, 0, 0.7);
   border-radius: 0.5rem;
   position: absolute;
-  top: 8rem;
-  right: 1rem;
+  top: 11.5rem;
+  right: 3rem;
   z-index: 1000000;
   background-color: #ffffff; }
-  .shopping-cart .item-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: rgba(0, 0, 0, 0.3) solid 1px;
-    border-radius: 0.25rem;
-    margin: 5px 10px; }
-    .shopping-cart .item-card__name {
-      font-size: 20px;
-      padding: 6px;
-      font-weight: bold; }
+  .shopping-cart .item-card td {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem; }
+  .shopping-cart #delete-icon:hover:after {
+    color: red;
+    cursor: pointer; }
+  .shopping-cart #delete-icon::after {
+    content: '\f057';
+    font-family: fontAwesome;
+    color: #33313B; }
+  .shopping-cart #empty-cart {
+    text-align: center;
+    color: #505050;
+    font-size: 1.2rem;
+    padding: 0.5rem; }
+  .shopping-cart #empty-cart:hover {
+    color: red;
+    background-color: #ffcbcb; }
+  .shopping-cart .table-titles th {
+    font-size: 20px;
+    text-align: center; }
+  .shopping-cart .table-titles .img-title {
+    width: 20%;
+    height: auto; }
+  .shopping-cart .table-titles .name-title {
+    width: 15%;
+    height: auto; }
+  .shopping-cart .table-titles .cost-title {
+    width: 20%;
+    height: auto; }
+  .shopping-cart .table-titles .cant-title {
+    width: 10%;
+    height: auto; }
+  .shopping-cart .table-titles .delete-title {
+    width: 5%;
+    height: auto; }
   .shopping-cart .cartImg {
-    width: 60%; }
+    width: 100%; }
+  .shopping-cart.hidden {
+    display: none; }
+
+@media only screen and (max-width: 768px) {
+  .cart-icon {
+    display: inline;
+    position: absolute;
+    top: 0.3rem;
+    left: 1rem;
+    right: 90vh;
+    font-size: 2rem;
+    color: #e7e7e7; }
+  .shopping-cart {
+    width: 90vw;
+    right: 5vw;
+    top: 4rem;
+    position: absolute; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
+  .shopping-cart {
+    width: 45vw;
+    right: 5vw;
+    top: 11rem;
+    position: absolute; } }
 
 .title {
   width: 88%;

@@ -3,10 +3,14 @@ const cart = document.querySelector("#shopping-cart");
 const cartContainer = document.querySelector("#cart-list tbody");
 const emptyCartBtn = document.querySelector("#empty-cart");
 const itemList = document.querySelector("#item-list");
+const cartIcon = document.querySelector("#cart-icon");
+let showCart = false;
 let itemsCart = [];
 
 addEventListeners();
 function addEventListeners(){
+    // Mostar esconder carro
+    cartIcon.addEventListener("click", showOrHideCart);
     // AGREGAR ITEM AL PRESIONAR "AGREGAR AL CARRITO"
     itemList.addEventListener("click", addItem);
 
@@ -90,8 +94,8 @@ function cartHTML() {
 
     // recorre el carro y genera el html
     itemsCart.forEach( item => {
-        console.log(item);
         const row = document.createElement("tr");
+        row.classList.add("item-card");
         row.innerHTML = `
             <td>
                 <img class="cartImg" src="${item.imagen}" >
@@ -106,20 +110,31 @@ function cartHTML() {
                 ${item.cantidad}
             </td>
             <td>
-                <a href="#" class="clear-item" data-id="${item.id}"> X </a>
+                <a href="#" class="clear-item" data-id="${item.id}" id="delete-icon"></a>
             </td>
         `;
 
         // agrega el html del cart en el<tbody>
         cartContainer.appendChild(row);
     });
-
-
 }
 
 // eliminar items del <tbody>
 function clearHTML() {
     while(cartContainer.firstChild) {
         cartContainer.removeChild(cartContainer.firstChild)
+    }
+}
+
+// funcion para esconder y mostrar el cart
+function showOrHideCart(){
+    if (showCart){
+        document.querySelector("#shopping-cart")
+            .classList.add("hidden");
+        showCart = !showCart
+    } else {
+        document.querySelector("#shopping-cart")
+            .classList.remove("hidden");
+        showCart = !showCart
     }
 }
